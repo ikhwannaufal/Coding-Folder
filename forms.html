@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">    
+  <head>        
+    <meta charset="UTF-8" />        
+    <meta data-fr-http-equiv="X-UA-Compatible" content="IE=edge" />        
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />        
+    <title>HTML Forms</title>    
+    <style>
+      form > * + * {
+        margin-top: 1rem;
+      }
+    </style>
+  </head>    
+  <body>        
+    <form>            
+      <div>                
+        <!-- First Name -->            
+      </div>
+         <label for="firstname">
+            First Name: <input type="text" name="firstname"/>
+         </label>   
+      <div>                
+        <!-- Last Name -->            
+      </div>
+         <label for="lastname">
+            Last Name: <input type="text" name="lastname"/>
+         </label>     
+      <div>                
+        <!-- Address -->            
+      </div>
+         <label for="address">
+            My Address: <input type="text" name="address"/>
+         </label>  
+      <div>                
+        <!-- State -->            
+      </div>
+         <label for="state">
+            State: <select name="state" id="state">
+                <option value="NSW" selected>NSW</option>
+                <option value="Selangor">Selangor</option>
+                <option value="Perak">Perak</option>
+                <option value="Kedah">Kedah</option>
+            </select>
+         </label> 
+      <div>                
+        <!-- Password -->            
+      </div>
+         <label for="password">
+            Password: <input type="password" name="password"/>
+         </label>   
+      <div>                
+        <!-- Gender -->            
+      </div>
+         <label for="gender">
+            Gender: 
+            <input type="radio" name="gender" value="Male" /> Male 
+            <span>or</span>
+            <input type="radio" name="gender" value="Female"> Female
+         </label>   
+      <div>                
+        <!-- Do you bleat like a sheep? -->            
+      </div>
+         <label>
+            Do you bleat like a sheep? <input type="checkbox" name="yesno" /> Yes
+         </label>    
+      <div>                
+        <!-- How many cups of coffee do you drink a day? -->            
+      </div>
+          <label for="cups">
+            How many cups of coffee do you drink a day?
+            <div><input type="radio" name="cups" value="0 to 2 Cup(s)" /> 0 to 2 Cup(s)  <input type="radio" name="cups" value="2 to 4 Cup(s)" /> 2 to 4 Cup(s)</div>
+            <div><input type="radio" name="cups" value="4 to 8 Cup(s)" /> 4 to 8 Cup(s)  <input type="radio" name="cups" value="8 to 16 Cup(s)" /> 8 to 16 Cup(s)</div>
+          </label>  
+      <div>                
+        <!-- Do you own a personal computer? -->            
+      </div>
+         <label for="hasComputer" id="hasComputer">
+            Do you own a personal computer?
+            <select name="hasComputer" id="hasComputer">
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+         </label>  
+      <div>                
+        <!-- How long would it take to create a HTML Form? -->            
+      </div>
+         <label for="time" id="time">
+            How long would it take to make a HTML form?
+            <div>
+                <input type="text" name="time">
+            </div>
+         </label>   
+      <div>                
+        <!-- Comments -->            
+      </div>
+         <label>
+            Comments:
+            <div>
+                <textarea name="comment" id="comments" cols="30" rows="10"></textarea>
+            </div>
+         </label>   
+      <div>
+      <div>
+        <label for="uploadfile">
+            Upload your file here:
+            <div>
+                <input type="file" name="file"/>
+      </div>
+        </label>
+        </div><br>                
+        <!-- Reset Button -->
+        <input type="reset"/>                
+        <!-- Submit Button -->
+        <input type="submit" value="Send Survey"/>            
+      </div>        
+    </form>    
+  </body>
+</html>
